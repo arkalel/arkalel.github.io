@@ -1,93 +1,121 @@
-body > header {
-    font-family: sans-serif;  
-    text-align: left;
-    color: white;
-    background-color: blue;
+header {
+    display: flex;
     align-items: center;
-    display: flex;
     justify-content: space-around;
-}
-h1{
-    margin: 10px 100px;
-    padding: 8px;
-}
-body {
-    background-color: aqua;
-}
-#logo {
-    font-family: "Fredoka One", sans-serif;
-    box-shadow: 5px 10px 10px 1px black;
-    width: 100% ;
-    height:fit-content;
-    background-color: rgb(226, 14, 14);
-    text-align: left;
-    width: 170px;
-}
-body > header > nav > ul {
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-}
-
-.navbutton {
+    background-color: black;
     color: white;
-    text-decoration: none;
-    text-align: left;
-    margin: 100px 10px;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 50px;
-}
-body > nav {
-    text-align: left;
-    margin: 1px 10px;
-    padding: 1px;
-    text-decoration: none;
-}
-
-
-body > main > article {
-    margin: auto;
-    width: 70%;
-}
-
-form {
-    text-align: center;
     
 }
+#nav {
+    display: flex;
+}
 
-h2{
+
+.navbutton {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+body> header> nav> ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+#side {
+    background-color: #29524A;
+    color: white;
+}
+
+#side> nav> ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+#side> nav> ul > li {
+    padding: 0;
+    width: 100px;
+}
+
+#side> nav> ul > li > a {
+    text-decoration: none;
+    color: black;
+    color: white;
+    width: 3000px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 90px;
+}
+
+#side >nav >form {
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-right: 10px;
+    width: 150px;
+}
+
+body> div {
+    display: flex;
+}
+
+#product1 {
+    grid-area: prod1;
+    padding: 20px;
+}
+#product2 {
+    grid-area: prod2;
+    padding: 20px;
+}
+#product3 {
+    grid-area: prod3;
+    padding: 20px;
+}
+#product4 {
+    grid-area: prod4;
+    padding: 20px;
+}
+#product5 {
+    grid-area: prod5;
+    padding: 20px;
+}
+#product6 {
+    grid-area: prod6;
+    padding: 20px;
+}
+#product7 {
+    grid-area: prod7;
+    padding: 20px;
+}
+#product8 {
+    grid-area: prod8;
+    padding: 20px;
+}
+
+#main > article {
+    border: 1px solid rgb(237, 237, 237);
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #d4d5d4;
     text-align: center;
 }
 
-img {
-    border-radius: 100%;
-}
-
-body > footer {
-    display: flex;
-}
-
-#footer-ul {
-    display: flex;
-    list-style: none;
-}
-#footer-ul > div > li{
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid white;
+#main> article > a{
     text-decoration: none;
+    color: black;
+}
+#main {
+    display: grid;
+    grid-template-areas: 
+    "prod1 prod2 prod3"
+    "prod4 prod5 prod6"
+    "prod7 prod8 prod9"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#footer-ul > div > li > a {
-    text-decoration: none;
-}
 
-#articles {
-    display: flex;
-    justify-content: space-around;
-}
 
-#articles > aside {
-    padding: 5%
-}
+
